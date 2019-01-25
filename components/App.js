@@ -1,4 +1,4 @@
-```
+
 var GIPHY_LOADING_URL = 'http://www.ifmo.ru/images/loader.gif';
 var GIPHY_API_URL = 'https://api.giphy.com';
 var GIPHY_PUB_KEY = 'q1MLo0EO8pEkbEeimt8RaXsAHuttdlnt'
@@ -73,7 +73,7 @@ Function httpGif(url){
         }
       );
       xhr.onerror = function() {
-            reject(new Error(`XMLHttpRequest Error: $(this.statusText)`));
+            reject(new Error(XMLHttpRequest Error: $(this.statusText)));
       };
       xhr.open('Get', url);
       xhr.send();
